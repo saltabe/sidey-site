@@ -32,9 +32,10 @@ export const sideyConfig = {
    */
   navigation: [
     { label: "Home", href: "/" },
-    { label: "Writings", href: "/writings" },
     { label: "About", href: "/about" },
-    { label: "RSS", href: "/rss.xml" },
+    { label: "Subscribe", href: "/subscribe" },
+    { label: "Contact", href: "/contact" },
+    { label: "Patreon", href: "https://www.patreon.com/c/SavannahAltabe/home" },
   ],
 }
 
