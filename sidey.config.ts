@@ -15,7 +15,8 @@ export const sideyConfig = {
     description: "A munchausen by proxy survivor's personal blog.",
 
     // The production domain where your site is deployed (no trailing slash)
-    url: "https://savannahaltabe.com",
+    //url: "https://savannahaltabe.com",
+    url: "https://saltabe.github.io",
 
     // Your name, utilized in copyright strings and author meta tags
     author: "Savannah Altabe",
