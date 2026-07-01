@@ -58,7 +58,7 @@ export default defineConfig({
     prefetchAll: true,
   },
   site: sideyConfig.site.url,
-  base: '/sidey-site'
+  base: '/sidey-site',
   vite: {
     plugins: [tailwindcss()],
   },
