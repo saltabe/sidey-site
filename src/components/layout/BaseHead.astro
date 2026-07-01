@@ -20,7 +20,15 @@ const fullTitle = isHome
 const description = pageDescription || config.site.description
 const socialImage = new URL(image || "/og-image.png", config.site.url)
 const canonicalURL = new URL(Astro.url.pathname, config.site.url)
+const isHomePage = Astro.url.pathname === "/"
 ---
+
+{/* Redirect home page to writing page */}
+{
+  isHomePage && (
+    <meta http-equiv="refresh" content="0; url='https://savannahaltabe.com/writings'">
+  )
+}
 
 {/* Global Metadata */}
 <meta charset="utf-8" />
