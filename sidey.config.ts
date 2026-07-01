@@ -34,7 +34,6 @@ export const sideyConfig = {
   navigation: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Writings", href: "/writings" },
     { label: "Subscribe", href: "/subscribe" },
     { label: "Contact", href: "/contact" },
     { label: "Patreon", href: "https://www.patreon.com/c/SavannahAltabe/home" },
