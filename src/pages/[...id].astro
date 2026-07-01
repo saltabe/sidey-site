@@ -8,7 +8,7 @@ export async function getStaticPaths() {
   const pages = getPages()
 
   return (await pages).map((page) => ({
-    params: { id: page.id === "home" ? undefined : page.id },
+    params: { id: page.id === "home" ? "writings" : page.id },
     props: { page },
   }))
 }
