@@ -16,7 +16,6 @@ export const sideyConfig = {
 
     // The production domain where your site is deployed (no trailing slash)
     url: "https://savannahaltabe.com",
-    //url: "https://saltabe.github.io",
 
     // Your name, utilized in copyright strings and author meta tags
     author: "Savannah Altabe",
