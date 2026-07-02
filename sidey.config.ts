@@ -31,7 +31,7 @@ export const sideyConfig = {
    * You can add, reorder, or remove objects here to update your site's structure.
    */
   navigation: [
-    { label: "Home", href: "/" },
+    { label: "Home", href: "/writings" },
     { label: "About", href: "/about" },
     { label: "Subscribe", href: "/subscribe" },
     { label: "Contact", href: "/contact" },
