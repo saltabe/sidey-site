@@ -1,0 +1,30 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro"
+import Prose from "@components/common/Prose.astro"
+
+const { frontmatter } = Astro.props
+const { title, description } = frontmatter.data
+---
+
+<BaseLayout title={title} description={description}>
+  <Prose>
+    <h1>{title}</h1>
+
+    <form
+      action="https://buttondown.com/api/emails/embed-subscribe/savannahaltabe"
+      method="post"
+      class="embeddable-buttondown-form"
+    >
+    <label for="bd-email">Enter your email</label>
+    <input type="email" name="email" id="bd-email" />
+    <input type="submit" value="Subscribe" />
+    <p>
+    <a href="https://buttondown.com/refer/savannahaltabe" target="_blank">
+      Powered by Buttondown.
+    </a>
+    </p>
+    </form>
+
+    <slot />
+  </Prose>
+</BaseLayout>
