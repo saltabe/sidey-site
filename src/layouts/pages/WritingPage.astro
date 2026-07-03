@@ -24,5 +24,19 @@ const formattedDate = formatDate(date, "long")
     <slot />
 
     <Back label="Back to Writings" href="/writings" class="mt-8" />
+
+    <form id="form" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Name" required />
+  
+    <label>Email Address</label>
+    <input type="email" name="email" inputmode="email" placeholder="Email Address" required />
+  
+    <label>Comment</label>
+    <textarea name="comment" rows="4" placeholder="Comment" required></textarea>
+  
+    <button type="submit">Submit</button>
+    </form>
+
   </Prose>
 </BaseLayout>
