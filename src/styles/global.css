@@ -326,6 +326,9 @@
   .comment-form input[type="text"], input[type="email"], textarea {
       display: block;
       width: 40%;
+      padding: 0.2em;
+      background-color: #fff;
+      border-width: 1px;
   }
 
   .comment-form textarea {
