@@ -322,11 +322,7 @@
   .comment-form.contact-page .comment-form-container {
     width: 100%;
   }
-
-  .comment-form.contact-page textarea {
-    margin-bottom: 0.5em;
-  }
-
+  
   .comment-form input[type="text"], textarea {
       display: block;
       width: 100%;
