@@ -318,10 +318,13 @@
 
   .comment-form textarea {
     margin-bottom: 0.5em;
+    resize: none;
   }
 
   .comment-form button {
       text-decoration: underline;
       font-weight: 500;
+      display: block;
+      margin: auto;
   }
 }
