@@ -319,6 +319,10 @@
     margin: auto;
   }
 
+  .comment-form.contact-page .comment-form-container {
+    width: 100%;
+  }
+
   .comment-form input[type="text"], input[type="email"], textarea {
       display: block;
       width: 40%;
@@ -335,5 +339,9 @@
       font-weight: 500;
       display: block;
       margin: auto;
+  }
+
+  .comment-form.contact-page button {
+    margin: 0;
   }
 }
