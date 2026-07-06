@@ -323,7 +323,7 @@
     width: 100%;
   }
 
-  .comment-form input[type="text"], input[type="email-large"], textarea {
+  .comment-form input[type="text"], textarea {
       display: block;
       width: 100%;
       padding: 0.2em;
@@ -331,12 +331,22 @@
       border-width: 1px;
   }
 
-  .comment-form input[type="email-small"], textarea {
+  .email-small {
       display: block;
       width: 40%;
       padding: 0.2em;
       background-color: #fff;
       border-width: 1px;
+
+  }
+
+  .email-large {
+      display: block;
+      width: 100%;
+      padding: 0.2em;
+      background-color: #fff;
+      border-width: 1px;
+
   }
 
   .comment-form textarea {
