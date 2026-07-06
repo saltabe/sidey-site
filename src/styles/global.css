@@ -310,13 +310,18 @@
     margin-top:  1.5em;
   }
 
+  .comment-form .comment-form-container {
+    width: 85%;
+    margin: auto;
+  }
+
   .comment-form input[type="text"], input[type="email"], textarea {
       display: block;
-      margin: auto;
-      width: 85%;
+      width: 40%;
   }
 
   .comment-form textarea {
+    width: 100%;
     margin-bottom: 0.5em;
     resize: none;
   }
