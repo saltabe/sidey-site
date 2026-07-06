@@ -5,7 +5,6 @@ import Prose from "@components/common/Prose.astro"
 const { frontmatter } = Astro.props
 const { title, description } = frontmatter.data
 
-document.getElementById('email').focus();
 ---
 
 <BaseLayout title={title} description={description}>
@@ -17,7 +16,7 @@ document.getElementById('email').focus();
       method="post"
       class="embeddable-buttondown-form comment-form contact-page"
     >
-    <input type="email" name="email" id="bd-email" placeholder="Email Address"/>
+    <input type="email" name="email_only" id="bd-email" placeholder="Email Address" autofocus/>
     <button type="submit" class="subscribe-button">Subscribe</button>
     <p>
     <a href="https://buttondown.com/refer/savannahaltabe" target="_blank">
