@@ -310,6 +310,10 @@
     margin-top:  1.5em;
   }
 
+  .comment-form.contact-page {
+    border-top-width: 0;
+  }
+
   .comment-form .comment-form-container {
     width: 85%;
     margin: auto;
