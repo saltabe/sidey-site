@@ -2,6 +2,8 @@
 import { type CollectionEntry, render } from "astro:content"
 
 import SinglePage from "@layouts/pages/SinglePage.astro"
+import SubscribePage from "@layouts/pages/SubscribePage.astro"
+import ContactPage from "@layouts/pages/ContactPage.astro"
 import { getPages } from "@utils/getContent"
 
 export async function getStaticPaths() {
@@ -19,8 +21,20 @@ interface Props {
 
 const { page } = Astro.props
 const { Content } = await render(page)
+let PageTemplate = null
+
+switch(page.id) {
+  case "contact":
+    PageTemplate = ContactPage
+    break
+  case "subscribe":
+    PageTemplate = SubscribePage
+    break
+  default:
+    PageTemplate = SinglePage
+}
 ---
 
-<SinglePage frontmatter={page}>
+<PageTemplate frontmatter={page}>
   <Content />
-</SinglePage>
+</PageTemplate>
