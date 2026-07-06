@@ -348,6 +348,10 @@
       margin: auto;
   }
 
+  .comment-form .subscribe-button {
+    margin-top: 0.2em;
+  }
+
   .comment-form.contact-page button {
     margin: 0;
   }
