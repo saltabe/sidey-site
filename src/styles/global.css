@@ -306,16 +306,22 @@
 
   .comment-form {
     border-top-width: 1px;
-    padding-top: 0.5em;
-}
+    padding-top: 1.5em;
+    margin-top:  1.5em;
+  }
 
-.comment-form input[type="text"], input[type="email"], textarea {
-    display: block;
-    margin: auto;
-    width: 85%;
-}
+  .comment-form input[type="text"], input[type="email"], textarea {
+      display: block;
+      margin: auto;
+      width: 85%;
+  }
 
-.comment-form button {
-    boder-bottom-width: 1px;
-}
+  .comment-form textarea {
+    margin-bottom: 0.5em;
+  }
+
+  .comment-form button {
+      text-decoration: underline;
+      font-weight: 500;
+  }
 }
