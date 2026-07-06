@@ -337,6 +337,10 @@
     resize: none;
   }
 
+  .comment-form input.name {
+    width: 30%;
+  }
+
   .comment-form button {
       text-decoration: underline;
       font-weight: 500;
