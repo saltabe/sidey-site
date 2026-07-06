@@ -321,6 +321,7 @@
 
   .comment-form.contact-page .comment-form-container {
     width: 100%;
+    margin-bottom: 0.5em;
   }
 
   .comment-form input[type="text"], textarea {
@@ -372,6 +373,5 @@
 
   .comment-form.contact-page button {
     margin: 0;
-    margin-bottom: 0.5em;
   }
 }
