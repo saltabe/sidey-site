@@ -303,4 +303,19 @@
   .heading-anchor:hover::before {
     @apply text-muted-foreground/75;
   }
+
+  .comment-form {
+    border-top-width: 1px;
+    padding-top: 0.5em;
+}
+
+.comment-form input[type="text"], input[type="email"], textarea {
+    display: block;
+    margin: auto;
+    width: 85%;
+}
+
+.comment-form button {
+    boder-bottom-width: 1px;
+}
 }

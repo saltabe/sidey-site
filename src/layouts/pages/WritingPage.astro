@@ -27,19 +27,12 @@ const formattedDate = formatDate(date, "long")
 
     <br />
     <br />
-    <form action="https://formsubmit.co/savannah@savannahaltabe.com" method="POST">
+    <form class="comment-form" action="https://formsubmit.co/savannah@savannahaltabe.com" method="POST">
       <input type="text" name="name" placeholder="Name" required />
-      
-      <br />
       <input type="email" name="email" inputmode="email" placeholder="Email Address" required />
-    
-      <br />
       <textarea name="comment" rows="4" placeholder="Comment" required></textarea>
-      
-      <input type="hidden" name="form_location" value={title} />
-
-      <br />
-      <button type="submit">Leave a comment</button>
+      <input type="hidden" name="form_location" value={title}>
+      <button type="submit" class="border-border/50">Leave a comment</button>
     </form>
 
   </Prose>
