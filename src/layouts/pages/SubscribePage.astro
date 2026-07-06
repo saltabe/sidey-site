@@ -7,6 +7,17 @@ const { title, description } = frontmatter.data
 
 ---
 
+<script>
+  function applyAutofocus() {
+    const target = document.querySelector('[autofocus]');
+    if (target instanceof HTMLElement) {
+      target.focus();
+    }
+  }
+
+  document.addEventListener('astro:page-load', applyAutofocus);
+</script>
+
 <BaseLayout title={title} description={description}>
   <Prose>
     <h1>{title}</h1>
@@ -16,7 +27,7 @@ const { title, description } = frontmatter.data
       method="post"
       class="embeddable-buttondown-form comment-form contact-page"
     >
-    <input type="email" name="email" id="bd-email" placeholder="Email Address" autofocus data-astro-reload/>
+    <input type="email" name="email" id="bd-email" placeholder="Email Address" autofocus/>
     <button type="submit" class="subscribe-button">Subscribe</button>
     <p>
     <a href="https://buttondown.com/refer/savannahaltabe" target="_blank">
