@@ -26,7 +26,7 @@ const { title, description } = frontmatter.data
       <div class="comment-form-container">
         <input type="text" name="name" class="name" placeholder="Name" required autofocus/>
         <input type="email" class="email-large" name="email" inputmode="email" placeholder="Email Address" required />
-        <p style="margin-bottom: 0.5em;"><textarea name="message" rows="4" placeholder="Message" required></textarea></p>
+        <textarea name="message" rows="4" placeholder="Message" required></textarea>
         <input type="hidden" name="form_location" value={title}>
         <button type="submit" class="border-border/50">Submit</button>
       </div>
