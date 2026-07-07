@@ -13,7 +13,7 @@ export async function GET(context) {
     items: writings.map((writing) => ({
       title: writing.data.title,
       description: writing.data.description,
-      link: writing.id,
+      link: `/writings/${writing.id}`,
       pubDate: writing.data.date,
     })),
     customData: `<language>${config.site.locale}</language>`,
